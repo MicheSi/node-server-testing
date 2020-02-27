@@ -18,6 +18,13 @@ exports.up = function(knex) {
       tbl.string('breed', 200).notNullable().index();
       tbl.string('age', 128);
 
+      tbl.integer('rescue_id')
+        .unsigned()
+        .notNullable()
+        .references('id')
+        .inTable('rescues')
+        .onDelete('RESTRICT')
+        .onUpdate('CASCADE')
   })
 };
 
