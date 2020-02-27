@@ -24,5 +24,18 @@ describe('rescues router', function () {
         })
     });
 
-
+    // describe('POST /api/rescues', function () {
+    //     it('201 on successful add', function () {
+    //         return request(server)
+    //             .post('/api/rescues')
+    //             .send({
+    //                 name: 'AZ Humane Society',
+    //                 location: 'Phoenix',
+    //                 phone_number: '1234567890'
+    //             })
+    //             .then(res => {
+    //                 expect(res.status).toBe(201);
+    //             })
+    //     })
+    // })
 })

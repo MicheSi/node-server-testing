@@ -4,7 +4,8 @@ module.exports = {
     allDogs,
     findDog,
     findById,
-    addDog
+    addDog,
+    removeDog
 }
 
 function allDogs() {
@@ -28,4 +29,10 @@ function findById(id) {
 function addDog(dog) {
     return db('dogs')
         .insert(dog, 'id')
+}
+
+function removeDog(id) {
+    return db('dogs')
+    .where({id})
+    .del()
 }

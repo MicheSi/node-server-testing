@@ -23,4 +23,20 @@ describe('dogs router', function () {
                 })
         })
     })
+
+    // describe('POST /api/dogs', function () {
+    //     it('201 status code on successful add', function () {
+    //         return request(server)
+    //             .post('/api/dogs')
+    //             .send({
+    //                 name: 'Lilo',
+    //                 breed: 'Shih Tzu',
+    //                 age: '1 year',
+    //                 rescue_id: '1'
+    //             })
+    //             .then(res => {
+    //                 expect(res.status).toBe(201);
+    //             })  
+    //     })
+    // })
 })

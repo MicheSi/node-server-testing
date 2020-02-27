@@ -4,7 +4,8 @@ module.exports = {
     add,
     find,
     findBy,
-    findById
+    findById,
+    remove
 }
 
 function find() {
@@ -31,4 +32,10 @@ function add(rescue) {
         .then(ids => {
             return findById(ids);
         })
+}
+
+function remove(id) {
+    return db('rescues')
+    .where({id})
+    .del()
 }
